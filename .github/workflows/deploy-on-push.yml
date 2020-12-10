@@ -7,21 +7,21 @@ on:
 jobs:
   build-and-deploy:
   name: Build and Deploy
-    runs-on: [ ubuntu-latest ]
+  runs-on: [ ubuntu-latest ]
 
-    steps:
-      -name: Checkout repo
-       uses: actions/checkout@main
+  steps:
+    -name: Checkout repo
+      uses: actions/checkout@main
 
-      -name: Install dependencies
-       run: npm install
+    -name: Install dependencies
+      run: npm install
 
-      -name: Build Project
-       run: npm run build
-      
-      -name: Deploy to Firebase
-       uses: w9jds/firebase-action@main
-       with:
-        args: deploy --only hosting
-      env:
-        FIREBASE_TOKEN: ${{secrets.FIREBASE_TOKEN}}
+    -name: Build Project
+      run: npm run build
+    
+    -name: Deploy to Firebase
+      uses: w9jds/firebase-action@main
+      with:
+      args: deploy --only hosting
+    env:
+      FIREBASE_TOKEN: ${{secrets.FIREBASE_TOKEN}}
