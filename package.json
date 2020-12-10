@@ -1,0 +1,20 @@
+{
+  "name": "stationary",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "cd src && ng build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/csrohit/stationary.git"
+  },
+  "author": "Rohit Nimkar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/csrohit/stationary/issues"
+  },
+  "homepage": "https://github.com/csrohit/stationary#readme"
+}
