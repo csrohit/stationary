@@ -2,12 +2,12 @@ name: Deploy on Push
 
 on:
   push:
-    branches: [main]
+    branches: [ main ]
 
 jobs:
   build-and-deploy:
   name: Build and Deploy
-    runs-on: [ubuntu-latest]
+    runs-on: [ ubuntu-latest ]
 
     steps:
       -name: Checkout repo
